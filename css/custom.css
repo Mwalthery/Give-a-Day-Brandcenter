@@ -1,16 +1,156 @@
-.container-fluid
+body { padding-top: 70px; }
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'sans-serif', 'comic sans' ;
+}
+.navbar-inverse {
+    border-color: #FFF;
+
+    background-color: #63B1BC;
+
+}
+
+.navbar-inverse .navbar-nav>li>a {
+    color: #FFF;
+}
+.navbar-inverse .navbar-toggle {
+    border-color: #FFF;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: #FFF;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+     background-color: #63b1bc;
+}
+
+.scroll-top {
+    /*display: none;*/
+    position: fixed;
+    z-index: 10000;
+    right: 20px;
+
+    bottom: 100px;
+
+    padding: 20px;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    opacity: 0.75;
+    border: 0.5px;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: #f4f4f4;
+
+
+}
+
+
+
+.scrolled .scroll-top {
+    display: block;
+
+    transition: opacity ease-in .5s;
+
+    opacity: 0.5;
+}
+.col-md-3 {
+  color: black ;
+  border-color: gray ;
+  border-right: 1px ;
+
+  background-color: #fff;
+
+}
+.col-md-9{
+  color : black ;
+
+  background-color: pink;
+}
+#home
 {
-  background-color: #ffe7f4 ;
+height : 650px;
+
+background-color: #fff ;
+
 
 }
-.jubotron{
-  color : #990c58;
-}
-.body{
-  background-color:#ffe7f4 ;
+#fonts {
+ height : 650px;
 
+ background-color: #fff ;
+ }
+ /*sidebar*/
+/* .group {
+    background: yellow;
+    width: 200px;
+    height: 500px;
 }
-.col-sm-12{
-background-color: black;
-color: white;
+.group .subgroup {
+    background: orange;
+    width: 150px;
+    height: 200px;
+}*/
+.fixed {
+    position: fixed;
+}
+
+/* sidebar */
+.bs-docs-sidebar {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    padding-left: 20px;
+}
+
+/* all links */
+.bs-docs-sidebar .nav>li>a {
+    padding: 4px 20px;
+
+    color: #999;
+    border-left: 2px solid transparent;
+
+    font-size: 13px;
+    font-weight: 400;
+}
+
+/* nested links */
+.bs-docs-sidebar .nav .nav>li>a {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 30px;
+
+    font-size: 12px;
+}
+
+/* active & hover links */
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>li>a:hover,
+.bs-docs-sidebar .nav>li>a:focus {
+    text-decoration: none;
+
+    color: #563d7c;
+    border-left-color: #563d7c;
+    background-color: transparent;
+}
+/* all active links */
+.bs-docs-sidebar .nav>.active>a,
+.bs-docs-sidebar .nav>.active:hover>a,
+.bs-docs-sidebar .nav>.active:focus>a {
+    font-weight: 700;
+}
+/* nested active links */
+.bs-docs-sidebar .nav .nav>.active>a,
+.bs-docs-sidebar .nav .nav>.active:hover>a,
+.bs-docs-sidebar .nav .nav>.active:focus>a {
+    font-weight: 500;
+}
+
+/* hide inactive nested list */
+.bs-docs-sidebar .nav ul.nav {
+    display: none;
+}
+/* show active nested list */
+.bs-docs-sidebar .nav>.active>ul.nav {
+    display: block;
 }
